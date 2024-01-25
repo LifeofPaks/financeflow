@@ -1,0 +1,23 @@
+$color-paragraph: #717579;
+$color-white: #ffffff;
+.app-button {
+  gap: 10px;
+
+  &.icon-reverse {
+    flex-direction: row-reverse;
+  }
+
+  &:disabled {
+    background-color: rgba($color-paragraph, 0.5);
+    color: rgba($color-white, 0.5) !important;
+    border: none;
+  }
+
+  .MuiTypography-root {
+    line-height: 1.2;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+}

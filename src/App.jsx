@@ -1,5 +1,6 @@
 
 import "./App.scss";
+import Footer from "./components/Footer/Footer";
 import Navbar from "./components/Navbar/Navbar";
 import HomePage from "./components/pages/home/HomePage";
 import { AppContext } from "./hooks/contextApi";
@@ -12,8 +13,8 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<HomePage/>}/>
-
       </Routes>
+      <Footer/>
     </AppContext.Provider>
   );
 }

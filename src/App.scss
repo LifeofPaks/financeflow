@@ -21,8 +21,6 @@ a {
   padding-inline: 133px;
 }
 
-
-
 .bigIcon {
   width: 68px;
   height: 68px;
@@ -42,18 +40,111 @@ a {
   justify-content: center;
   align-items: center;
   border-radius: 13px;
-  background: #0328EE;
+  background: #0328ee;
 }
 
-.flex{
+.flex {
   display: flex;
   align-items: center;
 }
-.buttonWraps{
+.buttonWraps {
   width: 100%;
   text-align: center;
 }
 
-.title{
+.title {
   justify-content: space-between;
+}
+
+.slick-slide div {
+  margin: 0.5rem;
+  margin-bottom: 2rem;
+  width: 568px;
+  height: 343px;
+}
+
+.tesItem {
+  padding: 65px 50px 66px 50px;
+  border-radius: 40px;
+  background: var(--dark-blue, #010d50);
+
+  .text {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32.004px;
+    margin-bottom: 25px;
+  }
+
+  .profile {
+    display: flex;
+    gap: 22px;
+
+    .name {
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 18px;
+      letter-spacing: 0.8px;
+      text-transform: uppercase;
+      margin-bottom: 6px;
+    }
+
+    .role {
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 18px;
+      letter-spacing: 0.8px;
+      text-transform: uppercase;
+    }
+
+    .tesDp {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+    }
+  }
+}
+
+.slick-dots {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  gap: 1rem;
+
+  li {
+    margin: 0 5px;
+    background: rgb(186, 186, 216);
+    transition: 0.3s;
+    border-radius: 50%;
+    color: transparent;
+    height: 8px !important;
+    width: 8px !important;
+
+    button {
+      border-radius: 50%;
+      border: none;
+      cursor: pointer;
+      transition: background-color 0.3s;
+
+      &::before {
+        display: none;
+      }
+
+      &:hover {
+        background-color: transparent;
+      }
+    }
+
+    &.slick-active {
+      background-color: blue;
+      width: 35px !important;
+      height: 8px !important;
+      transition: 0.3s;
+      border-radius: 20px;
+    }
+  }
 }
