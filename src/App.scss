@@ -149,3 +149,9 @@ a {
     }
   }
 }
+
+.link{
+  &.active{
+    text-decoration: underline;
+  }
+}
