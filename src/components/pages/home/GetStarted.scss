@@ -1,0 +1,75 @@
+@import "../../../styles//Responsive.scss";
+
+.gs {
+  padding-inline: 133px;
+  padding-top: 126px;
+  .dr {
+    &.bottom {
+      margin-top: 140px;
+      flex-direction: row-reverse;
+
+      .left {
+        display: flex;
+        width: 662px;
+        height: 400px;
+        justify-content: center;
+        align-items: center;
+        flex-shrink: 0;
+        border-radius: 40px;
+        background: var(--dark-blue, #010d50);
+      }
+    }
+
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+
+    .left {
+      display: flex;
+
+      .lp {
+        margin-left: -7rem;
+        transform: translateY(2rem);
+      }
+    }
+
+    .right {
+        width: 470px;
+      h2 {
+        font-size: 42px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 55.02px;
+        margin-bottom: 19px;
+      }
+
+      .text {
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 32.004px;
+        margin-bottom: 2rem;
+        width: 470px;
+      }
+
+      .itemWraps {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+
+        .item {
+          display: flex;
+          align-items: center;
+          gap: 17px;
+
+          .detais {
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 32.004px;
+          }
+        }
+      }
+    }
+  }
+}

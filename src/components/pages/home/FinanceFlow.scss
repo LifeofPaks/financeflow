@@ -1,0 +1,18 @@
+@import "../../../styles//Responsive.scss";
+
+.ff {
+  padding-block: 174px;
+
+  .text {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 34px;
+  }
+
+  .companyWraps {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}

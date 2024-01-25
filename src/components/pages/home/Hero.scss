@@ -1,0 +1,35 @@
+@import "../..//../styles//Responsive.scss";
+
+.hero {
+  display: flex;
+  align-items: center;
+
+
+  &.section {
+    padding: 86px 133px;
+  }
+
+  .left {
+    h1 {
+      width: 670px;
+      font-size: 66px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 79.992px; /* 121.2% */
+      letter-spacing: -1px;
+    }
+    .text {
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 32.004px;
+      width: 568px;
+      margin-bottom: 42px;
+    }
+    .buttonContainer {
+      display: flex;
+      align-items: center;
+      gap: 28px;
+    }
+  }
+}

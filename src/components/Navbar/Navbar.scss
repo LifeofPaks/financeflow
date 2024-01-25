@@ -1,0 +1,27 @@
+@import "../../styles//Responsive.scss";
+.navbar {
+  display: flex;
+  align-items: center;
+  padding: 33px 133px;
+  justify-content: space-between;
+
+  .left {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+
+    .navLinks {
+      display: flex;
+      align-items: center;
+      gap: 27px;
+      a {
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 16.002px; /* 114.3% */
+        letter-spacing: 1.4px;
+        text-transform: uppercase;
+      }
+    }
+  }
+}

@@ -1,0 +1,106 @@
+@import "../../../styles//Responsive.scss";
+
+.cf {
+  padding-inline: 133px;
+
+  .title {
+    width: 100%;
+    text-align: center;
+
+    h2 {
+      margin-bottom: 15px;
+      font-size: 42px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 55.02px;
+    }
+
+    .text {
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 32.004px;
+      width: 496px;
+      margin-inline: auto;
+      margin-bottom: 80px;
+    }
+  }
+
+  .more {
+    display: flex;
+    align-items: flex-start;
+    gap: 27px;
+
+    .left {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+
+      .item {
+        background: #010d50;
+        width: 325px;
+        height: 295px;
+        border-radius: 40px;
+        padding: 48px 23px;
+
+        h4 {
+          margin-top: 20px;
+          font-size: 18px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 25.992px; /* 144.4% */
+          letter-spacing: 0.9px;
+          text-transform: uppercase;
+        }
+
+        .detail {
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 26px; /* 162.5% */
+        }
+      }
+    }
+    .center {
+      width: 477px;
+      height: 622px;
+      flex-shrink: 0;
+      border-radius: 40px;
+      background: #0328ee;
+      position: relative;
+      padding-inline: 33px;
+      margin-bottom: 48px;
+
+      h4 {
+        margin-top: 44px;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 26px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+      }
+
+      .detail {
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 26px;
+        margin-top: 22px;
+      }
+
+      .phone {
+        position: absolute;
+        bottom: 0;
+        transform: TranslateX(-50%);
+        left: 50%;
+      }
+    }
+
+  
+  }
+  .buttonWraps {
+    width: 100%;
+    text-align: center;
+  }
+}

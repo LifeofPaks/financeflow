@@ -1,0 +1,38 @@
+@import "../../../styles//Responsive.scss";
+
+.explore {
+  position: relative;
+  padding-inline: 133px;
+  margin-top: 227px;
+  background: #0328ee;
+  height: 500px;
+
+  .left {
+    width: 589px;
+    h2 {
+      font-size: 42px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 55.02px;
+      margin-bottom: 1rem;
+    }
+    .text {
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 32.004px;
+      width: 496px;
+      margin-bottom: 2rem;
+    }
+  }
+
+  .right {
+    position: absolute;
+    bottom: -0.4rem;
+    right: 97px;
+
+    .lei {
+      transform: translate(8rem);
+    }
+  }
+}
