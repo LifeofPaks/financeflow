@@ -3,9 +3,18 @@
 .hero {
   display: flex;
   align-items: center;
-  
+
+  @include Mobile {
+    flex-direction: column;
+  }
+
   &.section {
     padding: 86px 133px;
+
+    @include Mobile {
+      padding-inline: 1rem;
+      padding-top: 48px;
+    }
   }
 
   .left {
@@ -14,8 +23,15 @@
       font-size: 66px;
       font-style: normal;
       font-weight: 700;
-      line-height: 79.992px; /* 121.2% */
+      line-height: 79.992px;
       letter-spacing: -1px;
+
+      @include Mobile {
+        font-size: 38px;
+        width: 100%;
+        line-height: 46px; /* 121.053% */
+        letter-spacing: -1px;
+      }
     }
     .text {
       font-size: 18px;
@@ -24,11 +40,44 @@
       line-height: 32.004px;
       width: 568px;
       margin-bottom: 42px;
+
+      @include Mobile {
+        font-weight: 400;
+        line-height: 26px;
+        width: 100%;
+        margin-top: 16px;
+      }
     }
     .buttonContainer {
       display: flex;
       align-items: center;
       gap: 28px;
+
+      @include Mobile {
+        flex-direction: column;
+        margin-bottom: 40px;
+
+        button{
+          width: 100%;
+        }
+      }
+    }
+  }
+  .right{
+
+    .heroImg{
+
+      @include Mobile {
+        display: none;
+       }
+    }
+
+    .heroImgM{
+      display: none;
+
+      @include Mobile {
+       display: block;
+      }
     }
   }
 }

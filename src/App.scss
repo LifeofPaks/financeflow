@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600;9..40,700;9..40,800;9..40,900;9..40,1000&display=swap");
+@import "./styles//Responsive.scss";
+
 * {
   margin: 0;
   padding: 0;
@@ -6,11 +8,10 @@
 }
 
 body {
-  background: #010725 ;
+  background: #010725;
   font-family: "DM Sans", sans-serif;
   color: #ffffff;
   overflow-x: hidden;
-  
 }
 
 a {
@@ -20,6 +21,10 @@ a {
 
 .section {
   padding-inline: 133px;
+
+  @include Mobile {
+    padding-inline: 1rem;
+  }
 }
 
 .bigIcon {
@@ -62,6 +67,11 @@ a {
   margin-bottom: 2rem;
   width: 568px;
   height: 343px;
+
+  @include Mobile {
+    width: 90%;
+    height: 471px;
+  }
 }
 
 .tesItem {
@@ -150,8 +160,8 @@ a {
   }
 }
 
-.link{
-  &.active{
+.link {
+  &.active {
     text-decoration: underline;
   }
 }

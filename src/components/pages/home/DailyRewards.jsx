@@ -9,6 +9,7 @@ import Laptop from "../../../assets/laptop.png";
 import Si4 from "../../../assets/si4.svg.png";
 import Si5 from "../../../assets/si5.svg.png";
 import Si6 from "../../../assets/si6.svg.png";
+import HeroM from "../../../assets/laptopM.png"
 
 const DailyRewards = () => {
   return (
@@ -17,8 +18,8 @@ const DailyRewards = () => {
     
     <div className="dr">
       <div className="left">
-          <img src={P1} alt="phone" />
-          <img src={P2} alt="phone" className="lp"/>
+          <img src={P1} alt="phone" className="phoney" />
+          <img src={P2} alt="phone" className="lp phoney"/>
       </div>
 
       <div className="right">
@@ -55,7 +56,8 @@ const DailyRewards = () => {
 
       <div className="dr bottom">
       <div className="left">
-          <img src={Laptop} alt="phone" />
+          <img src={Laptop} alt="phone" className="lappy" />
+          <img src={HeroM} alt="hero-img" className="heroImgM"/>
       </div>
 
       <div className="right">

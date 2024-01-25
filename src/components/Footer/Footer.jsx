@@ -21,7 +21,7 @@ const Footer = () => {
       <div className="menu flex title">
         <div className="left">
           <h4>Menu</h4>
-          <div className="links flex title">
+          <div className="links flex ">
             <div className="ll">
               <Link to="/">home</Link>
               <Link to="/about">about</Link>

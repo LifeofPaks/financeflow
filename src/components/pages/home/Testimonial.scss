@@ -1,12 +1,32 @@
 @import "../../../styles//Responsive.scss";
 
-.tes{
-    padding-inline: 133px;
-    padding-top: 207px;
+.tes {
+  padding-inline: 133px;
+  padding-top: 207px;
 
-    .title{
-        justify-content: space-between;
-        margin-bottom: 40px;
+  @include Mobile {
+    padding-inline: 1rem;
+  }
+
+  .title {
+    justify-content: space-between;
+    margin-bottom: 40px;
+
+    @include Mobile {
+      flex-direction: column;
+      text-align: left;
     }
 
+    h2 {
+      font-size: 28px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 36px;
+      margin-bottom: 22px;
+    }
+
+    button{
+        width: 100%;
+    }
+  }
 }

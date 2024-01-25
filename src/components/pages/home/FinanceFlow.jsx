@@ -4,6 +4,7 @@ import C1 from "../../../assets/c1.svg.png"
 import C2 from "../../../assets/c2.svg.png"
 import C3 from "../../../assets/c3.svg.png"
 import C4 from "../../../assets/c4.svg.png"
+import C5 from "../../../assets/c5.svg.png"
 
 const FinanceFlow = () => {
   return (
@@ -15,6 +16,7 @@ const FinanceFlow = () => {
             <img src={C1} alt="ff-img" />
             <img src={C2} alt="ff-img" />
             <img src={C3} alt="ff-img" />
+            <img src={C5} alt="ff-img" />
             <img src={C4} alt="ff-img" />
         </div>
     </div>

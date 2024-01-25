@@ -3,13 +3,28 @@
   padding-inline: 133px;
   padding-top: 124px;
 
+  @include Mobile {
+    padding-inline: 1rem;
+  }
+
   .title {
     margin-bottom: 48px;
+
+    @include Mobile {
+      flex-direction: column;
+    }
     h2 {
       font-size: 42px;
       font-style: normal;
       font-weight: 700;
       line-height: 55.02px;
+
+      @include Mobile {
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 36px;
+      }
     }
     .text {
       width: 461px;
@@ -17,10 +32,22 @@
       font-style: normal;
       font-weight: 400;
       line-height: 32.004px;
+
+      @include Mobile {
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 26px;
+width: 100%;
+      }
     }
   }
   .more {
     gap: 72px;
+
+    @include Mobile {
+      flex-direction: column;
+    }
     .card {
       width: 563px;
       height: 775px;
@@ -31,12 +58,24 @@
       padding: 48px;
       position: relative;
 
+      @include Mobile {
+        width: 100%;
+        height: 650px;
+      }
+
       h3 {
         font-size: 42px;
         font-style: normal;
         font-weight: 700;
         line-height: 55.02px;
         margin-bottom: 1rem;
+
+        @include Mobile {
+          font-size: 28px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 36px;
+        }
       }
 
       .text {
@@ -45,12 +84,23 @@
         font-weight: 400;
         line-height: 32.004px;
         margin-bottom: 2rem;
+
+        @include Mobile {
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 26px;
+        }
       }
-      .phn{
+      .phn {
         position: absolute;
         bottom: 0;
         left: 50%;
         transform: translateX(-50%);
+
+        @include Mobile {
+          width: 90%;
+        }
       }
     }
   }

@@ -2,6 +2,7 @@ import React from "react";
 import "./Hero.scss";
 import AppButton from "../../Button/AppButton";
 import Hero1 from "../../../assets/Apple Computers.png"
+import HeroM from "../../../assets/laptopM.png"
 
 const Hero = () => {
   return (
@@ -19,7 +20,8 @@ const Hero = () => {
         </div>
       </div>
       <div className="right">
-        <img src={Hero1} alt="hero-img" />
+        <img src={Hero1} alt="hero-img" className="heroImg"/>
+        <img src={HeroM} alt="hero-img" className="heroImgM"/>
         
       </div>
     </div>

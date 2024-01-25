@@ -3,9 +3,12 @@ import "./Navbar.scss";
 import { Link, NavLink } from "react-router-dom";
 import Logo from "../Logo/Logo";
 import AppButton from "../Button/AppButton";
+import MobileNav from "./MobileNav";
 
 const Navbar = () => {
   return (
+    <>
+    <MobileNav/>
     <div className="navbar">
       <div className="left">
         <Logo />
@@ -26,6 +29,7 @@ const Navbar = () => {
         />
       </div>
     </div>
+    </>
   );
 };
 

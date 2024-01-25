@@ -20,8 +20,8 @@ const Explore = () => {
       </div>
 
       <div className="right flex">
-        <img src={Ep2} alt="eimage" className="lei" />
-        <img src={Ep1} alt="eimage" />
+        <img src={Ep2} alt="eimage" className="lei phoney" />
+        <img src={Ep1} alt="eimage" className="phoney" />
       </div>
      
     </div>
